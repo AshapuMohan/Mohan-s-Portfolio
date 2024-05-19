@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+.nav-item :hover{
+    background-color:rgb(222, 227, 237);
+    color: black;
+    width: max-content;
+    border-radius: 15px;
+}
+.navbar-brand:hover{
+    background-color:rgb(222, 227, 237);
+    color: black;
+    width: 10%;
+    border-radius: 15px;
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+}
+section{
+    height: 100vh;
+}
+.about-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.skills-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.work-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
