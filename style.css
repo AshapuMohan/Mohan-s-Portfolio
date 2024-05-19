@@ -4,6 +4,17 @@
     padding: 0;
     font-family: "Poppins",sans-serif;
 }
+const resizeOps = () => {
+    document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+};
+
+  resizeOps();
+  window.addEventListener("resize", resizeOps);
+.modal {
+  width: 50vw;
+  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
+}
 .nav-item :hover{
     background-color:rgb(222, 227, 237);
     color: black;
@@ -20,8 +31,9 @@
     display: flex;
     flex-direction: row;
 }
-section{
-    height: 100vh;
+html, body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .about-section{
     display: flex;
